@@ -1,0 +1,31 @@
+@use "config" as *;
+
+html,
+body {
+	width: 100%;
+	margin: 0;
+	padding: 1%;
+	font-size: 0;
+	font-family: $Font-English;
+	color: $Color-Text-Main;
+	background-color: $Color-Body;
+	scroll-behavior: smooth;
+	/* overflow-x: hidden; */
+}
+
+::-webkit-scrollbar {
+	width: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #004a94;
+	border-radius: 13px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #0060c0;
+}
+
+*::selection {
+	background: $Color-Accent;
+}

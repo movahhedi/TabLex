@@ -1,0 +1,36 @@
+{
+	"version": "0.2",
+	"ignorePaths": [
+		"node_modules/**",
+		"**/vendor/**",
+		"temp/**",
+		"build/**"
+	],
+	"minWordLength": 4,
+	"allowCompoundWords": true,
+	"dictionaryDefinitions": [
+		{
+			"name": "Moderacorp",
+			"path": "./.cspell/Moderacorp.txt",
+			"addWords": true
+		},
+		{
+			"name": "AdmoPro",
+			"path": "./.cspell/AdmoPro.txt",
+			"addWords": true
+		},
+		{
+			"name": "Common",
+			"path": "./.cspell/Common.txt",
+			"addWords": true
+		}
+	],
+	"dictionaries": [
+		"Moderacorp",
+		"AdmoPro",
+		"Common"
+	],
+	"words": [],
+	"ignoreWords": [],
+	"import": []
+}

@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "TabLex",
+	"version": "0.2",
+	"description": "Flex your tabs! shmovahhedi.com",
+	"author": "Shahab Movahhedi",
+	"chrome_url_overrides": {
+		"newtab": "index.html"
+	},
+	"icons": {
+		"48": "icon.png",
+		"96": "icon.png"
+	},
+	"permissions": [
+		"activeTab",
+		"tabs",
+		"downloads",
+		"storage",
+		"unlimitedStorage",
+		"https://shmovahhedi.com/",
+		"http://shmovahhedi.com/",
+		"https://shmovahhedi.ir/",
+		"http://shmovahhedi.ir/",
+		"chrome://favicon/"
+	],
+	"content_security_policy": "script-src 'self' https://www.googletagmanager.com/gtag/js https://ssl.google-analytics.com; object-src 'self'"
+}

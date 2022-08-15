@@ -1,0 +1,6 @@
+@use "config" as *;
+@forward "reset";
+@forward "common";
+@forward "main";
+@forward "toast";
+@forward "NewTab"

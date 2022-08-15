@@ -1,0 +1,157 @@
+$Base-File-Url: "../";
+$Base-Img-Url: "#{$Base-File-Url}images/";
+
+$Responsive-Tablet-Max: 770px;
+$Responsive-Mobile-Max: 500px;
+
+@mixin media-max($max-width) {
+	@media only screen and (max-width: $max-width) {
+		@content;
+	}
+}
+
+@mixin mobile() {
+	@media only screen and (max-width: $Responsive-Mobile-Max) {
+		@content;
+	}
+}
+
+@mixin tablet() {
+	@media only screen and (max-width: $Responsive-Tablet-Max) {
+		@content;
+	}
+}
+
+$Color-Accent: #007fff;
+$Color-Accent-Light: #007fff;
+$Color-Accent-Dark: #007fff;
+
+// $Color-Accent-Night: darken($Color-Accent, 30%);
+
+$Color-Primary: #007fff;
+$Color-Primary-Light: #007fff;
+
+// $Color-Primary-Dark: darken($Color-Primary, 10%);
+// $Color-Primary-Night: darken($Color-Primary, 30%);
+
+$Color-Secondary: #ff8000;
+
+// $Color-Secondary-Light: lighten($Color-Secondary, 10%);
+// $Color-Secondary-Dark: darken($Color-Secondary, 10%);
+// $Color-Secondary-Night: darken($Color-Secondary, 30%);
+
+// $Color-Tertiary: #0ad5d5;
+// $Color-Tertiary-Light: lighten($Color-Tertiary, 10%);
+// $Color-Tertiary-Dark: darken($Color-Tertiary, 10%);
+// $Color-Tertiary-Night: darken($Color-Tertiary, 30%);
+
+$Color-White: #fff;
+$Color-Gray-50: #f9f9f9;
+$Color-Gray-100: #f2f2f2;
+$Color-Gray-200: #dfdfdf;
+$Color-Gray-300: #ccc;
+$Color-Gray-400: #a5a5a5;
+$Color-Gray-500: #7f7f7f;
+$Color-Gray-600: #727272;
+$Color-Gray-700: #5f5f5f;
+$Color-Gray-800: #4c4c4c;
+$Color-Gray-900: #3e3e3e;
+$Color-Gray-950: #111;
+$Color-Black: #111118;
+
+$Color-Body: #1e1e2a;
+$Color-Body-Light: #2c2c3d;
+$Color-Body-Dark: #1e1e2a;
+
+// Light Mode
+// $Color-Body: #dfdfdf;
+// $Color-Body-Light: #fafafa;
+// $Color-Body-Dark: #45526c;
+
+$Color-OnBody: $Color-Gray-500;
+$Color-OnBody-Light-Shade: $Color-Gray-500;
+$Color-OnBody-Dark-Shade: $Color-Gray-500;
+
+$Color-Text-Main: #f9f7f7;
+$Color-Text-Secondary: #898989;
+$Color-Text-Secondary-Dark: #757575;
+$Color-Text-White: #f9f7f7;
+$Color-Text-Black: #111118;
+$Color-Text-OnAccent: #f9f7f7;
+$Color-Text-OnBody: #111118;
+
+// Light Mode
+// $Color-Text-Main: #4b4b4b;
+// $Color-Text-Secondary: #898989;
+// $Color-Text-Secondary-Dark: #757575;
+// $Color-Text-White: #f9f7f7;
+// $Color-Text-Black: #111118;
+// $Color-Text-OnAccent: #f9f7f7;
+// $Color-Text-OnBody: #111118;
+
+$Color-Error: #c84662;
+$Color-Success: #49b964;
+$Color-Warning: #e6e634;
+
+$Color-Yellow: #ffe600;
+$Color-Red: #ec3f3f;
+$Color-Red-Light: #ec3f3f;
+
+$Color-Transparent: transparent;
+
+// $Color-Shadow: #4b4b4b70;
+// $Color-Instagram: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+
+$Box-Shadow-Stage-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+$Box-Shadow-Stage-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+$Box-Shadow-Stage-3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+$Box-Shadow-Stage-4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+$Box-Shadow-Stage-5: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+$Type-Diff: 1.32;
+
+@include mobile {
+	$Type-Diff: 0.6;
+}
+
+@include tablet {
+	$Type-Diff: 0.9;
+}
+
+$Type-H1: 36px;
+$Type-H2: calc($Type-H1 / $Type-Diff);
+$Type-H3: calc($Type-H2 / $Type-Diff);
+$Type-H4: calc($Type-H3 / $Type-Diff);
+$Type-H5: calc($Type-H4 / $Type-Diff);
+$Type-H6: calc($Type-H5 / $Type-Diff);
+
+$Type-Paragraph-Regular: 16px;
+$Type-Paragraph-Small: calc($Type-Paragraph-Regular / $Type-Diff);
+$Type-Paragraph-Large: calc($Type-Paragraph-Regular * $Type-Diff);
+
+$Type-Caption-Regular: 12px;
+$Type-Caption-Small: calc($Type-Caption-Regular / $Type-Diff);
+$Type-Caption-Large: calc($Type-Caption-Regular * $Type-Diff);
+
+$Type-Button-Regular: 16px;
+$Type-Button-Small: calc($Type-Button-Regular / $Type-Diff);
+$Type-Button-Large: calc($Type-Button-Regular * $Type-Diff);
+
+$Type-Input-Regular: 16px;
+$Type-Input-Small: calc($Type-Input-Regular / $Type-Diff);
+$Type-Input-Large: calc($Type-Input-Regular * $Type-Diff);
+
+$Font-Persian: "Vazirmatn FD", "Vazirmatn", "Vazir FD", "Vazir", "Segoe UI", "Segoe Pro", sans-serif;
+$Font-Persian-Title: "Sahel", "Vazirmatn FD", "Vazir FD", "Vazirmatn", "Vazir", "Segoe UI", "Segoe Pro", sans-serif;
+$Font-Arabic: "Noto Kufi Arabic", "Vazirmatn FD", "Vazirmatn", "Vazir FD", "Vazir", "Segoe UI", "Segoe Pro", sans-serif;
+$Font-English: "Segoe UI", "Segoe Pro", sans-serif;
+$Font-Mono: "Consolas", monospace;
+
+@mixin MaxLines($LineCount: 4) {
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-line-clamp: $LineCount;
+	line-clamp: $LineCount;
+	-webkit-box-orient: vertical;
+}

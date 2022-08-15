@@ -1,0 +1,54 @@
+@use "config" as *;
+
+.Ltr {
+	direction: ltr;
+	text-align: start;
+}
+
+.Rtl {
+	direction: rtl;
+	text-align: start;
+}
+
+/* *:dir(rtl) { */
+*[dir="rtl"] {
+	font-family: $Font-Persian;
+}
+
+*[dir="ltr"] {
+	font-family: $Font-English;
+}
+
+.English {
+	direction: ltr;
+	text-align: start;
+	font-family: $Font-English;
+}
+
+.Persian {
+	direction: rtl;
+	text-align: start;
+	font-family: $Font-Persian;
+}
+
+.Arabic {
+	direction: rtl;
+	text-align: start;
+	font-family: $Font-Arabic;
+}
+
+.Bold {
+	font-weight: bold;
+}
+
+code,
+.EnglishMono,
+.Mono {
+	direction: ltr;
+	text-align: end;
+	font-family: $Font-Mono;
+}
+
+.IsClickable {
+	cursor: pointer;
+}

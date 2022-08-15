@@ -1,0 +1,213 @@
+@use "config" as *;
+
+*,
+*::before,
+*::after {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	text-decoration: none;
+	border: unset;
+	box-sizing: border-box;
+	list-style-type: none;
+	user-select: none;
+}
+
+html {
+	min-height: 100%;
+	font-size: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	display: block;
+	height: 100%;
+	font-size: 0;
+	box-sizing: border-box;
+}
+
+div,
+section,
+span,
+img,
+button,
+figure,
+i,
+label,
+li {
+	user-select: none;
+}
+
+div,
+h3,
+h2,
+h1,
+h4,
+h5,
+h6,
+form,
+a,
+input,
+textarea,
+body,
+button,
+ul,
+li,
+img,
+select,
+option,
+p,
+figure {
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	border: none;
+	list-style-type: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input[type="text"] {
+	user-select: text;
+}
+
+button,
+select,
+option {
+	cursor: pointer;
+}
+
+*:focus,
+input:focus,
+button:focus,
+textarea {
+	outline: none;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+	-webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label,
+title,
+li,
+button,
+input,
+textarea {
+	font-size: $Type-Paragraph-Regular;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: $Type-H1;
+
+	@media only screen and (max-width: $Responsive-Tablet-Max) {
+		font-size: calc($Type-H1 * 0.6);
+	}
+
+	@media only screen and (max-width: $Responsive-Mobile-Max) {
+		font-size: calc($Type-H1 * 0.9);
+	}
+}
+
+h2 {
+	font-size: $Type-H2;
+
+	@media only screen and (max-width: $Responsive-Tablet-Max) {
+		font-size: calc($Type-H2 * 0.6);
+	}
+
+	@media only screen and (max-width: $Responsive-Mobile-Max) {
+		font-size: calc($Type-H2 * 0.9);
+	}
+}
+
+h3 {
+	font-size: $Type-H3;
+
+	@media only screen and (max-width: $Responsive-Tablet-Max) {
+		font-size: calc($Type-H3 * 0.6);
+	}
+
+	@media only screen and (max-width: $Responsive-Mobile-Max) {
+		font-size: calc($Type-H3 * 0.9);
+	}
+}
+
+h4 {
+	font-size: $Type-H4;
+
+	@media only screen and (max-width: $Responsive-Tablet-Max) {
+		font-size: calc($Type-H4 * 0.6);
+	}
+
+	@media only screen and (max-width: $Responsive-Mobile-Max) {
+		font-size: calc($Type-H4 * 0.9);
+	}
+}
+
+h5 {
+	font-size: $Type-H5;
+
+	@media only screen and (max-width: $Responsive-Tablet-Max) {
+		font-size: calc($Type-H5 * 0.6);
+	}
+
+	@media only screen and (max-width: $Responsive-Mobile-Max) {
+		font-size: calc($Type-H5 * 0.9);
+	}
+}
+
+h6 {
+	font-size: $Type-H6;
+
+	@media only screen and (max-width: $Responsive-Tablet-Max) {
+		font-size: calc($Type-H6 * 0.6);
+	}
+
+	@media only screen and (max-width: $Responsive-Mobile-Max) {
+		font-size: calc($Type-H6 * 0.9);
+	}
+}
+
+p,
+li {
+	font-size: $Type-Paragraph-Regular;
+}
+
+button {
+	font-size: $Type-Button-Regular;
+}
+
+input,
+textarea {
+	font-size: $Type-Input-Regular;
+}
+
+span,
+label,
+title {
+	font-size: $Type-Caption-Regular;
+}

@@ -1,0 +1,30 @@
+{
+	"SimpleAjax": {
+		"prefix": ["", "SimpleAjax"],
+		"body": [
+			"SimpleAjax(\"${1:file.php}\", {",
+			"\taction: \"${2:doedit}\",",
+			"\tid: \"$3\",",
+			"\tnonce: \"$4\",",
+			"\tfollow: \"$5\",",
+			"\tFormData: $(\"#${6:myForm}\").SerializeFormToJson()",
+			"\t}",
+			");"
+		],
+		"description": "Place a SimpleAjax function."
+	},
+	"SimpleAjax Full": {
+		"prefix": ["", "SimpleAjaxFull"],
+		"body": [
+			"SimpleAjax(\"${1:file.php}\", {",
+			"\taction: \"${2:doedit}\",",
+			"\tid: \"$3\",",
+			"\tnonce: \"$4\",",
+			"\tfollow: \"$5\",",
+			"\tFormData: $(\"#${6:myForm}\").SerializeFormToJson()",
+			"\t}",
+			");"
+		],
+		"description": "Place a SimpleAjax function with full parameters."
+	},
+}

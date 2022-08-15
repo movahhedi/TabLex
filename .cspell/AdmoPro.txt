@@ -1,0 +1,9 @@
+AdmoPro
+donew
+doedit
+dodelete
+dologin
+dologout
+dosignup
+accountmeta
+accountsessions

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'" />
+	<link rel="icon" href="icon.png" type="image/png">
+	<title>New Tab</title>
+	<!-- <link rel="stylesheet" href="css/panel.css"> -->
+	<link rel="stylesheet" href="assets/css/master.css">
+	<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+	<script type="text/javascript" src="assets/libraries/"></script>
+
+	<style>
+		.Button {
+			position: relative;
+			display: block;
+			width: auto;
+			min-width: 3vw; /* 10vw */
+			max-width: 100%;
+			margin-inline-start: 0.75vw;
+			margin-block-end: 0.75vw;
+			padding: 0.5vw 1vw;
+			text-align: center;
+			font-size: 16px;
+			text-decoration: none;
+			color: #fff;
+			background-color: #007FFF;
+			border-radius: 3vw;
+			outline: 0;
+			transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+			box-sizing: border-box;
+			cursor: pointer;
+			-webkit-appearance: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="ToastBox"></div>
+
+	<aside id="Sidebar">
+		<h1 id="ExtensionName">TabLex</h1>
+
+		<div id="NewSession">
+			<input type="text" class="InputText" name="SessionName" id="New-SessionName">
+			<button type="button" class="Button" id="NewSession-Button">Add</button>
+			<button type="button" class="Button" id="Sessions-Download">Download</button>
+			<button type="button" class="Button" id="Sessions-DeleteAll">Delete All</button>
+		</div>
+
+		<div id="Sidebar-TabList">
+			<!-- <div class="Sidebar-Tab">
+				<h4 class="Title">Session Name</h4>
+				<p class="TabCount">184 tabs</p>
+			</div> -->
+		</div>
+	</aside>
+
+	<main id="Main">
+		<section id="NewTabSiteList">
+			<!-- <a class="NewTabSite" href="#">
+				<img class="NewTabSite-Image" />
+				<div class="NewTabSite-TextBox">
+					<h4 class="NewTabSite-Title"></h4>
+					<p class="NewTabSite-Url"></p>
+				</div>
+			</a> -->
+		</section>
+	</main>
+
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<!-- <script type="text/javascript" src="NewTabBookmarks.js"></script>
+	<script type="text/javascript" src="NewTab.js"></script>
+	<script type="text/javascript" src="Session.js"></script> -->
+</body>
+</html>

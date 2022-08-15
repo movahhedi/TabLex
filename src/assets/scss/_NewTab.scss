@@ -1,0 +1,102 @@
+@use "config" as *;
+
+#Sidebar {
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+}
+
+#Main {
+	display: inline-block;
+	width: 80%;
+	vertical-align: top;
+}
+
+.Sidebar-Tab {
+	width: 90%;
+	margin-bottom: 5%;
+	padding: 0.7vw;
+	background-color: $Color-Body-Light;
+	border-radius: 1vw;
+	cursor: pointer;
+
+	&.Current {
+		background-color: $Color-Body-Light;
+	}
+	.Title {
+		text-align: start;
+		font-size: 18px;
+		font-weight: 700;
+	}
+	.TabCount {
+		text-align: start;
+		font-size: 14px;
+		font-weight: 400;
+	}
+}
+
+#NewTabSiteList {
+	width: 100%;
+	vertical-align: top;
+	padding: 2vw;
+}
+
+.NewTabSite {
+	position: relative;
+	display: inline-block;
+	width: 23%;
+	vertical-align: top;
+	margin: 1%;
+	padding: 0.7vw;
+	font-weight: 400;
+	font-family: $Font-English;
+	color: $Color-Text-Main;
+	/* background-color: #00000080; */
+	background-color: $Color-Body-Light;
+	border-radius: 1vw;
+	cursor: pointer;
+}
+
+.NewTabSite.Small {
+	width: 4.25%;
+}
+
+.NewTabSite-Image {
+	display: inline-block;
+	width: 13%;
+	vertical-align: top;
+	border-radius: 0.2vw;
+}
+
+.NewTabSite.Small .NewTabSite-Image {
+	width: 100%;
+}
+
+.NewTabSite-TextBox {
+	display: inline-block;
+	width: 80%;
+	margin-inline-start: 0.8vw;
+}
+
+.NewTabSite-Title {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 0 0 0.3vw;
+	font-size: 1vw;
+	font-weight: 400;
+	text-overflow: ellipsis;
+	color: $Color-Text-Main;
+}
+
+.NewTabSite-Url {
+	position: relative;
+	display: block;
+	width: 100%;
+	white-space: nowrap;
+	font-size: 0.8vw;
+	font-weight: 400;
+	text-overflow: ellipsis;
+	color: #848484;
+	overflow: hidden;
+}
